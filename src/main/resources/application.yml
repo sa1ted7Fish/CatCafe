@@ -14,6 +14,9 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
     cache: false
+  web:
+    resources:
+      static-locations: classpath:/
 
 mybatis:
   type-aliases-package: xyz.salted7fish.catcafe.domain

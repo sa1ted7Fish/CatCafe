@@ -1,0 +1,88 @@
+/*@font-face {*/
+/*    font-family: ;*/
+/*    src: url("../font/.ttf");*/
+/*}*/
+.background{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fdfcdc;
+    background-image:
+            linear-gradient(135deg, #94d2bd 25%, transparent 0),
+            linear-gradient(-45deg, #94d2bd 25%, transparent 0),
+            linear-gradient(135deg, #94d2bd 25%, transparent 0),
+            linear-gradient(-45deg, #94d2bd 25%, transparent 0);
+    background-size: 10vw 10vw;
+    background-position: 0 0, 0 0, calc(5vw + 1px) calc(5vw + 1px), calc(-5vw - 1px) calc(-5vw - 1px);
+}
+
+.logo-box{
+    position: absolute;
+    width: 60vw;
+    height: 60vh;
+    left: 20vw;
+    top: 20vh;
+    background: #fdfcdc;
+    border-radius: 20px;
+    box-shadow: 0 0 45px black;
+    overflow: hidden;
+}
+.grid-line{
+    position: absolute;
+    height: 4%;
+    width: 100%;
+    background-image: linear-gradient(90deg, black 50%, white 50%);
+    background-size: 4%;
+}
+.line-1{
+    top: 0;
+}
+.line-2{
+    top: 4%;
+    background-position: 2% 0;
+}
+.line-3{
+    bottom: 4%;
+}
+.line-4{
+    bottom: 0;
+    background-position: 2% 0;
+}
+.logo{
+    position: absolute;
+    width: 100%;
+    top: 14%;
+    text-align: center;
+    font-family: "Bickham Script One", serif;
+    font-size: 196px;
+    letter-spacing: 4px;
+}
+.slogan{
+    position: absolute;
+    width: 100%;
+    bottom: 16%;
+    text-align: center;
+    font-family: "Wonder Night", serif;
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.stars{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.stars img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.star-1{
+    bottom: 60%;
+    left: 5%;
+}
+.star-2{
+    top: 40%;
+    right: 5%;
+}
+
