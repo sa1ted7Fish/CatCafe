@@ -1,31 +1,137 @@
+.menu-view-window, .menu-box, .menu-footer, .menu-header, .menu.menu-container{
+    width: 900px;
+    left: calc(50% - 450px);
+}
+.menu-view-window{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.menu-view-window::-webkit-scrollbar{
+    display: none;
+}
+.menu-box{
+    position: absolute;
+    top: 0px;
+}
+.menu-header, .menu-footer{
+    position: relative;
+    height: 100px;
+}
+.menu-container{
+    position: relative;
+    background: #00afb9;
+    box-shadow: 0 0 45px 10px black;
+}
 .menu{
-    position: absolute;
-    width: 140vw;
-    height: 80vh;
-    left: 110vw;
-    top: 10vh;
-    overflow: visible;
-    box-shadow: 0 0 45px black;
+    position: relative;
+    width: 800px;
+    top: 50px;
+    left: 50px;
+    background: #fdfcdc;
 }
-.menu-section{
+
+.circle-1, .circle-2, .circle-3, .circle-4{
     position: absolute;
-    width: 40vw;
-    height: 80vh;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #00afb9;
+    z-index: 1;
 }
-.menu-section-1{
-    width: 20vw;
-    background: red;
+.circle-1{
+    top: 0;
     left: 0;
 }
-.menu-section-2{
-    background: blue;
-    left: 20vw;
+.circle-2{
+    top: 0;
+    right: 0;
 }
-.menu-section-3{
-    background: yellow;
-    left: 60vw;
+.circle-3{
+    bottom: 0;
+    left: 0;
 }
-.menu-section-4{
+.circle-4{
+    bottom: 0;
+    right: 0;
+}
+.circle-5, .circle-6, .circle-7, .circle-8{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fdfcdc;
+    z-index: 2;
+}
+.circle-5{
+    top: 5px;
+    left: 5px;
+}
+.circle-6{
+    top: 5px;
+    right: 5px;
+}
+.circle-7{
+    bottom: 5px;
+    left: 5px;
+}
+.circle-8{
+    bottom: 5px;
+    right: 5px;
+}
+.rectangle-1, .rectangle-2, .rectangle-3, .rectangle-4{
+    position: absolute;
+    background: #fdfcdc;
+    z-index: 3;
+}
+.rectangle-1, .rectangle-2{
+    width: 900px;
+    height: 45px;
+}
+.rectangle-1{
+    top: 0;
+}
+.rectangle-2{
+    bottom: 0;
+}
+.rectangle-3, .rectangle-4{
+    width: 45px;
+}
+.rectangle-3{
+    left: 0;
+}
+.rectangle-4{
+    right: 0;
+}
+.menu-area{
+    position: relative;
+    width: 700px;
+    left: 50px;
+    top: 0;
+}
+.pattern {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background: red;
+}
+.section-title{
+    position: relative;
+    width: 700px;
+    height: 100px;
     background: green;
-    left: 100vw;
+}
+.menu-item-1{
+    position: relative;
+    width: 700px;
+    height: 100px;
+    background: blue;
+}
+.menu-item-2{
+    position: relative;
+    width: 700px;
+    height: 100px;
+    background: black;
 }

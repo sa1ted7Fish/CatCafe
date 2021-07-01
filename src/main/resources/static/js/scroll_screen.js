@@ -17,14 +17,6 @@ $(function() {
             350,
             function() {
                 onScroll = false;
-                if (curIndex === 1) {
-                    $(".menu").delay(20).animate(
-                        {left: "80vw"},
-                        350
-                    )
-                } else {
-                    $(".menu").css("left", "110vw");
-                }
             })
     };
 
@@ -48,7 +40,7 @@ $(function() {
     mainDiv.on("mousewheel", function(event) {
         if (onScroll) return;
 
-        $(".menu").on("mousewheel", function (e) {
+        $(".menu-container").on("mousewheel", function (e) {
             e.stopPropagation();
         })
 

@@ -1,26 +1,10 @@
 $(function () {
-    $(".menu-section-1").click(function () {
-        $(".menu").animate(
-            {left: "40vw"},
-            350
-        )
-    });
-    $(".menu-section-2").click(function () {
-        $(".menu").animate(
-            {left: "10vw"},
-            350
-        )
-    });
-    $(".menu-section-3").click(function () {
-        $(".menu").animate(
-            {left: "-30vw"},
-            350
-        )
-    });
-    $(".menu-section-4").click(function () {
-        $(".menu").animate(
-            {left: "-70vw"},
-            350
-        )
-    })
+    var itemLen = $(".menu-item-1").length + $(".menu-item-2").length;
+    var menuHeight = 600 + itemLen * 100 + 100;
+    $(".menu-box").height(menuHeight + 200);
+    $(".menu-container").height(menuHeight);
+    $(".menu").height(menuHeight - 100);
+    $(".menu-area").height(menuHeight);
+    $(".rectangle-3").height(menuHeight);
+    $(".rectangle-4").height(menuHeight);
 })
