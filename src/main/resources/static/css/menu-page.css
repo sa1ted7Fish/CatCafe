@@ -1,0 +1,31 @@
+.menu{
+    position: absolute;
+    width: 140vw;
+    height: 80vh;
+    left: 110vw;
+    top: 10vh;
+    overflow: visible;
+    box-shadow: 0 0 45px black;
+}
+.menu-section{
+    position: absolute;
+    width: 40vw;
+    height: 80vh;
+}
+.menu-section-1{
+    width: 20vw;
+    background: red;
+    left: 0;
+}
+.menu-section-2{
+    background: blue;
+    left: 20vw;
+}
+.menu-section-3{
+    background: yellow;
+    left: 60vw;
+}
+.menu-section-4{
+    background: green;
+    left: 100vw;
+}
