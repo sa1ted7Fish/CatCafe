@@ -55,4 +55,8 @@
     set category = #{category,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="selectAllMonthlyCostCategory" resultType="xyz.salted7fish.catcafe.domain.DictMonthlyCost">
+    select id, category from cat_dict_monthly_cost
+  </select>
 </mapper>

@@ -27,6 +27,14 @@
     font-family: "Bickham Script One";
     src: url("../font/Bickham Script One.ttf");
 }
+@font-face {
+    font-family: FangZheng Cartoon;
+    src: url("../font/FangZheng Cartoon.ttf");
+}
+@font-face {
+    font-family: xkcd-script;
+    src: url("../font/xkcd-script.ttf");
+}
 
 .background{
     position: absolute;

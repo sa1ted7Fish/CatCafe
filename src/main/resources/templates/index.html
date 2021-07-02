@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>CatCafe</title>
     <link type="text/css" href="static/css/index.css" rel="stylesheet">
     <link type="text/css" href="static/css/logo-page.css" rel="stylesheet">
     <link type="text/css" href="static/css/menu-page.css" rel="stylesheet">
+    <link type="text/css" href="static/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
     <style>
 
     </style>
@@ -29,6 +30,7 @@
                         <img src="static/img/stars.png">
                     </div>
                 </div>
+                <div class="get-started"><span class="fa fa-arrow-down"></span></div>
             </div>
             <div class="page page-2 menu-page">
                 <div class="menu-view-window">
@@ -50,41 +52,48 @@
                             <div class="menu">
                                 <div class="menu-area">
                                     <div class="pattern"></div>
-                                    <div class="section-title"></div>
-                                    <div class="menu-item-1">
-                                        <div class="menu-item-category"></div>
-                                        <div class="menu-item-unit-price"></div>
-                                        <div class="menu-item-amount"></div>
+
+                                    <div class="section-title">Initial Cost</div>
+                                    <div class="menu-item">
+                                        <div class="menu-item-title-category">类别</div>
+                                        <div class="menu-item-title-unit-price">单价(￥)</div>
+                                        <div class="menu-item-title-amount">数量</div>
                                     </div>
-                                    <div class="menu-item-2">
-                                        <div class="menu-item-category"></div>
-                                        <div class="menu-item-unit-price"></div>
-                                        <div class="menu-item-amount"></div>
+                                    <div class="menu-item initial-cost" th:each="item:${initialCostCategoryList}" th:classappend="'initial-cost-'+${item.id}">
+                                        <div class="menu-item-category" th:utext="${item.id}+'.&nbsp;&nbsp'+${item.category}"></div>
+                                        <div class="menu-item-unit-price"><input class="unit-price-input"></div>
+                                        <div class="menu-item-amount"><input class="amount-input"></div>
                                     </div>
-                                    <div class="menu-item-1">
-                                        <div class="menu-item-category"></div>
-                                        <div class="menu-item-unit-price"></div>
-                                        <div class="menu-item-amount"></div>
+
+
+                                    <div class="section-title">Irregular Cost</div>
+                                    <div class="menu-item">
+                                        <div class="menu-item-title-category">类别</div>
+                                        <div class="menu-item-title-unit-price">单价(￥)</div>
+                                        <div class="menu-item-title-amount">数量</div>
                                     </div>
-                                    <div class="menu-item-2">
-                                        <div class="menu-item-category"></div>
-                                        <div class="menu-item-unit-price"></div>
-                                        <div class="menu-item-amount"></div>
+                                    <div class="menu-item irregular-cost" th:each="item:${irregularCostCategoryList}" th:classappend="'irregular-cost-'+${item.id}">
+                                        <div class="menu-item-category" th:utext="${item.id}+'.&nbsp;&nbsp'+${item.category}"></div>
+                                        <div class="menu-item-unit-price"><input class="unit-price-input"></div>
+                                        <div class="menu-item-amount"><input class="amount-input"></div>
                                     </div>
-                                    <div class="menu-item-1">
-                                        <div class="menu-item-category"></div>
-                                        <div class="menu-item-unit-price"></div>
-                                        <div class="menu-item-amount"></div>
+
+
+                                    <div class="section-title">Monthly Cost</div>
+                                    <div class="menu-item">
+                                        <div class="menu-item-title-category">类别<br>&nbsp;&nbsp;</div>
+                                        <div class="menu-item-title-unit-price">单价(￥)<br>&nbsp;&nbsp;</div>
+                                        <div class="menu-item-title-amount">使用<br>时长(月)&nbsp;&nbsp;</div>
                                     </div>
-                                    <div class="menu-item-2">
-                                        <div class="menu-item-category"></div>
-                                        <div class="menu-item-unit-price"></div>
-                                        <div class="menu-item-amount"></div>
+                                    <div class="menu-item monthly-cost" th:each="item:${monthlyCostCategoryList}" th:classappend="'monthly-cost-'+${item.id}">
+                                        <div class="menu-item-category" th:utext="${item.id}+'.&nbsp;&nbsp'+${item.category}"></div>
+                                        <div class="menu-item-unit-price"><input class="unit-price-input"></div>
+                                        <div class="menu-item-amount"><input class="amount-input"></div>
                                     </div>
-                                    <div class="menu-item-1">
-                                        <div class="menu-item-category"></div>
-                                        <div class="menu-item-unit-price"></div>
-                                        <div class="menu-item-amount"></div>
+
+                                    <div class="menu-buttons">
+                                        <div class="btn-cancel">Cancel</div>
+                                        <div class="btn-OK">OK</div>
                                     </div>
                                 </div>
                             </div>
@@ -109,6 +118,8 @@
     <script src="static/js/background.js"></script>
     <script src="static/js/scroll_screen.js"></script>
     <script src="static/js/menu_page.js"></script>
+    <script src="static/js/catculator.js"></script>
+
 
 </body>
 </html>

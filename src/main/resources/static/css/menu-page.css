@@ -14,7 +14,7 @@
 }
 .menu-box{
     position: absolute;
-    top: 0px;
+    top: 0;
 }
 .menu-header, .menu-footer{
     position: relative;
@@ -115,23 +115,115 @@
     position: relative;
     width: 700px;
     height: 500px;
-    background: red;
+    /*background: red;*/
 }
 .section-title{
     position: relative;
-    width: 700px;
+    width: 600px;
     height: 100px;
-    background: green;
+    margin-top: 50px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 80px;
+    font-family: "Roseonly", serif, sans-serif;
+    border-bottom: 5px solid #00afb9;
+    left: 50px;
 }
-.menu-item-1{
+.menu-item{
     position: relative;
     width: 700px;
-    height: 100px;
-    background: blue;
+    font-family: "FangZheng Cartoon",serif, sans-serif;
 }
-.menu-item-2{
+.menu-item-category{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    line-height: 60px;
+    margin-left: 25px;
+    font-size: 36px;
+}
+.menu-item-unit-price{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    line-height: 60px;
+    margin-left: 25px;
+}
+.menu-item-amount{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    line-height: 60px;
+    margin-left: 25px;
+}
+input{
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 22px;
+    border-bottom: 3px dotted black;
+    background: none;
+    text-align: center;
+    font-family: xkcd-script, sans-serif, serif;
+}
+.menu-item-title-category{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    line-height: 60px;
+    margin-left: 25px;
+    font-size: 36px;
+    text-align: center;
+}
+.menu-item-title-unit-price{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    line-height: 60px;
+    margin-left: 25px;
+    font-size: 36px;
+    text-align: center;
+}
+.menu-item-title-amount{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    line-height: 60px;
+    margin-left: 25px;
+    font-size: 36px;
+    text-align: center;
+}
+.menu-buttons{
     position: relative;
     width: 700px;
-    height: 100px;
-    background: black;
+    height: 250px;
+
 }
+.btn-cancel{
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    bottom: 50px;
+    left: 50px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-family: "Roseonly", serif, sans-serif;
+    border-radius: 12px;
+    border: 4px outset #00afb9;
+}
+.btn-OK{
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    bottom: 50px;
+    right: 50px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-family: "Roseonly", serif, sans-serif;
+    border-radius: 10px;
+    border: 4px outset #00afb9;
+ }
