@@ -25,9 +25,9 @@ $(function scroll_screen() {
         toPage(1);
     })
 
-    $(".btn-cancel").click(backtoTop)
+    $(".menu-buttons .btn-cancel").click(backtoTop)
 
-    $(".btn-OK").click(function () {
+    $(".menu-buttons .btn-OK").click(function () {
         initialCost = calcSum($(".initial-cost"));
         irregularCost = calcSum($(".irregular-cost"));
         monthlyCost = calcMean($(".monthly-cost"))
@@ -35,12 +35,9 @@ $(function scroll_screen() {
         console.log(irregularCost);
         console.log(monthlyCost);
         toPage(2);
+        $(".coffee").delay(800).animate(
+            {left: "100px"},
+            500
+        )
     })
-    // $(".page-3").click(function () {
-    //     cleanInput($(".initial-cost"));
-    //     cleanInput($(".irregular-cost"));
-    //     cleanInput($(".monthly-cost"));
-    //     toPage(1);
-    //     backtoTop();
-    // })
 })

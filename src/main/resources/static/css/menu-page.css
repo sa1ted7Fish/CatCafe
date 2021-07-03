@@ -186,7 +186,7 @@
     line-height: 60px;
     margin-left: 25px;
 }
-input{
+.menu-area input{
     outline: none;
     border: none;
     width: 100%;
@@ -229,7 +229,7 @@ input{
     height: 250px;
 
 }
-.btn-cancel{
+.menu-buttons .btn-cancel{
     position: absolute;
     width: 220px;
     height: 80px;
@@ -244,7 +244,7 @@ input{
     border: 4px outset #00afb9;
     user-select: none;
 }
-.btn-OK{
+.menu-buttons .btn-OK{
     position: absolute;
     width: 220px;
     height: 80px;

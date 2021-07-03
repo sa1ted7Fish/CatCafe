@@ -1,4 +1,9 @@
 var backtoTop = function () {
+    initialCost = 0;
+    irregularCost = 0;
+    monthlyCost = 0;
+    deposit = 0;
+    monthlyPay = 0;
     cleanInput($(".initial-cost"));
     cleanInput($(".irregular-cost"));
     cleanInput($(".monthly-cost"));
@@ -19,8 +24,8 @@ $(function () {
     var menuButtonsBoxHeight = 250
     var menuHeight = patternHeight + sectionTitleHeight * 3 + menuButtonsBoxHeight;
 
-    var btnCancel = $(".btn-cancel")
-    var btnOK = $(".btn-OK")
+    var btnMenuCancel = $(".menu-buttons .btn-cancel")
+    var btnMenuOK = $(".menu-buttons .btn-OK")
 
     $(".menu-item").each(function () {
         menuHeight += $(this).height();
@@ -35,21 +40,21 @@ $(function () {
     $(".rectangle-3").height(menuHeight + borderTop + borderBottom);
     $(".rectangle-4").height(menuHeight + borderTop + borderBottom);
 
-    btnCancel.mousedown(function () {
-        btnCancel.css("border-style", "inset");
-        btnCancel.css("background", "#fdfcd7");
+    btnMenuCancel.mousedown(function () {
+        btnMenuCancel.css("border-style", "inset");
+        btnMenuCancel.css("background", "#fdfcd7");
     })
-    btnCancel.mouseup(function () {
-        btnCancel.css("border-style", "outset");
-        btnCancel.css("background", "#fdfcdc");
+    btnMenuCancel.mouseup(function () {
+        btnMenuCancel.css("border-style", "outset");
+        btnMenuCancel.css("background", "#fdfcdc");
     })
-    btnOK.mousedown(function () {
-        btnOK.css("border-style", "inset");
-        btnOK.css("background", "#fdfcd7");
+    btnMenuOK.mousedown(function () {
+        btnMenuOK.css("border-style", "inset");
+        btnMenuOK.css("background", "#fdfcd7");
     })
-    btnOK.mouseup(function () {
-        btnOK.css("border-style", "outset");
-        btnOK.css("background", "#fdfcdc");
+    btnMenuOK.mouseup(function () {
+        btnMenuOK.css("border-style", "outset");
+        btnMenuOK.css("background", "#fdfcdc");
     })
 
 })
