@@ -1,10 +1,11 @@
-.menu-view-window, .menu-box, .menu-footer, .menu-header, .menu.menu-container{
+.menu-box, .menu-footer, .menu-header, .menu.menu-container{
     width: 900px;
     left: calc(50% - 450px);
 }
 .menu-view-window{
     position: absolute;
     top: 0;
+    width: 100%;
     height: 100vh;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -114,8 +115,37 @@
 .pattern {
     position: relative;
     width: 700px;
-    height: 500px;
-    /*background: red;*/
+    height: 600px;
+}
+.pattern-title{
+    position: relative;
+    width: 700px;
+    height: 140px;
+}
+.pattern-bottom, .pattern-top{
+    position: relative;
+    width: 700px;
+    height: 200px;
+}
+.pattern-top img{
+    position: absolute;
+    width: 700px;
+    height: 160px;
+    bottom: 0;
+    object-fit: fill;
+}
+.pattern-title{
+    text-align: center;
+    line-height: 140px;
+    font-size: 120px;
+    font-family: Roseonly, serif, sans-serif;
+}
+.pattern-bottom img{
+    position: absolute;
+    width: 700px;
+    height: 160px;
+    object-fit: fill;
+    transform: rotateX(180deg);
 }
 .section-title{
     position: relative;
@@ -160,7 +190,7 @@ input{
     outline: none;
     border: none;
     width: 100%;
-    font-size: 22px;
+    font-size: 26px;
     border-bottom: 3px dotted black;
     background: none;
     text-align: center;
@@ -212,6 +242,7 @@ input{
     font-family: "Roseonly", serif, sans-serif;
     border-radius: 12px;
     border: 4px outset #00afb9;
+    user-select: none;
 }
 .btn-OK{
     position: absolute;
@@ -226,4 +257,5 @@ input{
     font-family: "Roseonly", serif, sans-serif;
     border-radius: 10px;
     border: 4px outset #00afb9;
+    user-select: none;
  }

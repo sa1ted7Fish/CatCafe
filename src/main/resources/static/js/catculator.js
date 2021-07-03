@@ -1,27 +1,36 @@
-// $(function () {
-//     var calcSum = function (elem) {
-//         var sum = 0;
-//
-//         $(elem).each(function () {
-//             var unitPrice = $(this).find($(".unit-price-input")).val();
-//             var amount = $(this).find($(".amount-input")).val();
-//             if (unitPrice === null) {
-//                 unitPrice = 0;
-//             }
-//             if (amount === null) {
-//                 amount = 0;
-//             }
-//             sum += unitPrice * amount;
-//
-//         })
-//         return sum;
-//     }
-//
-//     $(".btn-OK").click(function () {
-//         var initialCost = calcSum(".initial-cost");
-//         var irregularCost = calcSum(".irregular-cost");
-//         console.log(initialCost);
-//         console.log(irregularCost);
-//         toPage(2);
-//     })
-// })
+var initialCost = 0;
+var irregularCost = 0;
+var monthlyCost = 0;
+
+var calcSum = function ($elem) {
+    var sum = 0;
+
+    $elem.each(function () {
+        var unitPrice = parseFloat($(this).find($(".unit-price-input")).val().trim());
+        var amount = parseFloat($(this).find($(".amount-input")).val().trim());
+        if (!isNaN(unitPrice) && !isNaN(amount)) {
+            sum += parseFloat((unitPrice * amount).toFixed(2));
+        }
+
+    });
+    return sum;
+}
+
+var calcMean = function ($elem) {
+    var mean = 0;
+
+    $elem.each(function () {
+        var unitPrice = parseFloat($(this).find($(".unit-price-input")).val().trim());
+        var amount = parseFloat($(this).find($(".amount-input")).val().trim());
+        if (!isNaN(unitPrice) && !isNaN(amount) && amount !== 0) {
+            mean += parseFloat((unitPrice / amount).toFixed(2));
+        }
+    });
+    return mean;
+}
+var cleanInput = function ($elem) {
+    $elem.each(function () {
+        $(this).find($(".unit-price-input")).val("");
+        $(this).find($(".amount-input")).val("");
+    });
+}
