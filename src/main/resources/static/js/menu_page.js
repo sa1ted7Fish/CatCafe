@@ -2,8 +2,8 @@ var backtoTop = function () {
     initialCost = 0;
     irregularCost = 0;
     monthlyCost = 0;
-    deposit = 0;
-    monthlyPay = 0;
+    deposit = 1;
+    monthlyPay = 1;
     cleanInput($(".initial-cost"));
     cleanInput($(".irregular-cost"));
     cleanInput($(".monthly-cost"));

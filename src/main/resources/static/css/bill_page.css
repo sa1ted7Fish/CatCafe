@@ -1,0 +1,64 @@
+.bill{
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    left: calc(50% - 300px);
+    top: 30px;
+    background: white;
+    box-shadow: 0 0 30px black ;
+}
+.bill-title{
+    position: relative;
+    width: 400px;
+    height: 120px;
+    left: 100px;
+    font-size: 80px;
+    line-height: 120px;
+    text-align: center;
+    font-family: Roseonly, serif, sans-serif;
+    border-bottom: 6px dotted black;
+}
+.bill-content{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    top: 20px;
+}
+.bill-item{
+    position: relative;
+    display: flex;
+    width: 450px;
+    height: 60px;
+    left: 70px;
+    font-family: "FangZheng Cartoon", serif, sans-serif;
+    line-height: 60px;
+    text-align: left;
+    font-size: 28px;
+}
+.bill-item .item, .bill-item .dots, .bill-item .cost{
+    position: relative;
+    flex: auto;
+}
+.bill-item .cost{
+    text-align: right;
+}
+.dots div{
+    position: relative;
+    width: 80%;
+    height: 30px;
+    left: 10%;
+    border-bottom: 4px dotted black;
+}
+.bill .btn-OK{
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    left: calc(50% - 80px);
+    bottom: 10px;
+    line-height: 60px;
+    text-align: center;
+    background: #ccdbfd;
+    font-size: 26px;
+    font-family: "FangZheng Cartoon", serif, sans-serif;
+    border-radius: 10px;
+}

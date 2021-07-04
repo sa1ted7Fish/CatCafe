@@ -14,9 +14,4 @@ $(function () {
     btnCellphoneOK.mouseup(function () {
         btnCellphoneOK.css("background", "#ccdbfd");
     })
-
-    btnCellphoneCancel.click(function () {
-        $(".cellphone .deposit-input").val("");
-        $(".cellphone .monthly-pay-input").val("");
-    })
 })

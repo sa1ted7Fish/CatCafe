@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>CatCafe</title>
     <link type="text/css" href="static/css/index.css" rel="stylesheet">
-    <link type="text/css" href="static/css/logo-page.css" rel="stylesheet">
-    <link type="text/css" href="static/css/menu-page.css" rel="stylesheet">
-    <link type="text/css" href="static/css/coffee-page.css" rel="stylesheet">
+    <link type="text/css" href="static/css/logo_page.css" rel="stylesheet">
+    <link type="text/css" href="static/css/menu_page.css" rel="stylesheet">
+    <link type="text/css" href="static/css/coffee_page.css" rel="stylesheet">
+    <link type="text/css" href="static/css/bill_page.css" rel="stylesheet">
+    <link type="text/css" href="static/css/end_page.css" rel="stylesheet">
     <link type="text/css" href="static/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
     <style>
 
@@ -34,8 +36,9 @@
                     <div class="stars star-2">
                         <img src="static/img/stars.png">
                     </div>
+                    <div class="get-started">Click To Start</div>
                 </div>
-                <div class="get-started"><span class="fa fa-arrow-down"></span></div>
+
             </div>
             <div class="page page-2 menu-page">
                 <div class="menu-view-window">
@@ -133,8 +136,66 @@
                     <img src="static/img/coffee.png">
                 </div>
             </div>
-            <div class="page page-4 bill-page"></div>
-            <div class="page page-5 end-page"></div>
+            <div class="page page-4 bill-page">
+                <div class="bill">
+                    <div class="bill-title">Bill</div>
+                    <div class="bill-content">
+                        <div class="bill-item">
+                            <div class="item">初始支出</div>
+                            <div class="dots"><div></div></div>
+                            <div class="cost"></div>
+                        </div>
+                        <div class="bill-item">
+                            <div class="item">不定期支出</div>
+                            <div class="dots"><div></div></div>
+                            <div class="cost"></div>
+                        </div>
+                        <div class="bill-item">
+                            <div class="item">月均支出</div>
+                            <div class="dots"><div></div></div>
+                            <div class="cost"></div>
+                        </div>
+                        <div class="bill-item">
+                            <div class="item">初始支出占存款比例</div>
+                            <div class="dots"><div></div></div>
+                            <div class="cost"></div>
+                        </div>
+                        <div class="bill-item">
+                            <div class="item">不定期支出占存款比例</div>
+                            <div class="dots"><div></div></div>
+                            <div class="cost"></div>
+                        </div>
+                        <div class="bill-item">
+                            <div class="item">月均支出占月薪比例</div>
+                            <div class="dots"><div></div></div>
+                            <div class="cost"></div>
+                        </div>
+                        <div class="btn-OK">确定</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="page page-5 end-page">
+                <div class="money money-1">
+                    <div class="money-circle money-circle-1"></div>
+                    <div class="money-circle money-circle-2"></div>
+                    <div class="money-circle money-circle-3"></div>
+                    <div class="money-circle money-circle-4"></div>
+                    <div class="money-central-circle"><img src="static/img/cat footprint.png"></div>
+                    <div class="money-content">
+                        <div class="left-text">Click</div>
+                        <div class="right-text">Me</div>
+                    </div>
+                </div>
+                <div class="the-end">
+                    <div class="the-end-content">
+                        <div class="the-end-title">The End</div>
+                        <div class="the-end-author">@author:</div>
+                        <div class="the-end-github">@github: https://github.com/sa1ted7Fish</div>
+                        <div class="the-end-blog">@blog: http://119.45.44.48/wordpress/</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="page-nav">
             <div class="current"></div>
@@ -147,10 +208,12 @@
 
     <script src="static/jquery-3.5.1/jquery-3.5.1.js"></script>
     <script src="static/jquery-3.5.1/jquery.mousewheel.js"></script>
-    <script src="static/js/background.js"></script>
+    <script src="static/js/logo_page.js"></script>
     <script src="static/js/scroll_screen.js"></script>
     <script src="static/js/menu_page.js"></script>
     <script src="static/js/coffee_page.js"></script>
+    <script src="static/js/bill_page.js"></script>
+    <script src="static/js/end_page.js"></script>
     <script src="static/js/catculator.js"></script>
 
 

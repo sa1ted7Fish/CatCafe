@@ -21,7 +21,7 @@ $(function scroll_screen() {
     page.css("height", winHeight);
     mainDiv.addClass("scroll-done");
 
-    $(".get-started").click(function () {
+    $(".logo-box").click(function () {
         toPage(1);
     })
 
@@ -31,13 +31,45 @@ $(function scroll_screen() {
         initialCost = calcSum($(".initial-cost"));
         irregularCost = calcSum($(".irregular-cost"));
         monthlyCost = calcMean($(".monthly-cost"))
-        console.log(initialCost);
-        console.log(irregularCost);
-        console.log(monthlyCost);
         toPage(2);
         $(".coffee").delay(800).animate(
             {left: "100px"},
-            500
+            500,
+            function () {
+                $(".coffee").css("position", "fixed");
+            }
         )
+    });
+
+    $(".cellphone-buttons .btn-cancel").click(function () {
+        deposit = 1;
+        monthlyPay = 1;
+        $(".cellphone .deposit-input").val("");
+        $(".cellphone .monthly-pay-input").val("");
+    })
+    $(".cellphone-buttons .btn-OK").click(function () {
+        deposit = parseFloat($(".cellphone .deposit-input").val());
+        monthlyPay = parseFloat($(".cellphone .monthly-pay-input").val());
+        calcinitialCostRatio();
+        calcirregularCostRatio();
+        calcMonthlyCostRatio();
+        setCosttoBill();
+        toPage(3);
+    })
+    $(".bill .btn-OK").click(function () {
+        $(".coffee").delay(100).animate(
+            {left: "-450px"},
+            500,
+            function () {
+                $(".bg-banquet").animate(
+                    {right: "-800px"},
+                    500,
+                    function () {
+                        $(".bg-banquet").css("display", "none");
+                        toPage(4);
+                    }
+                );
+            }
+        );
     })
 })

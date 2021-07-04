@@ -32,7 +32,7 @@
 .logo{
     position: absolute;
     width: 100%;
-    top: 14%;
+    top: 6%;
     text-align: center;
     font-family: "Bickham Script One", serif;
     font-size: 196px;
@@ -68,12 +68,12 @@
 }
 .get-started{
     position: absolute;
-    width: 50px;
+    width: 400px;
     height: 50px;
-    left: calc(50% - 25px);
-    bottom: 50px;
+    left: calc(50% - 200px);
+    bottom: 130px;
     text-align: center;
     line-height: 50px;
-    font-size: 50px;
+    font-size: 36px;
+    font-family: Roseonly, serif, sans-serif;
 }
-
